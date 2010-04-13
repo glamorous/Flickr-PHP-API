@@ -49,6 +49,10 @@ If you find one, please inform us with the issue tracker on [github](http://gith
 
 ## Changelog ##
 
+**Flickr 0.6 - 13/04/2010**
+
+- [bug] Error-number with curl is returning an int and defaults to 0  
+
 **Flickr 0.5 - 20/03/2010**
 
 - Initial version of the PHP-wrapper  

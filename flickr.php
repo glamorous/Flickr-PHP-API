@@ -5,9 +5,9 @@
  * Documentation and usage in README file
  *
  * @author Jonas De Smet - Glamorous
- * @since 20.03.2010
+ * @date 13.04.2010
  * @copyright Jonas De Smet - Glamorous
- * @version 0.5
+ * @version 0.6
  * @license BSD http://www.opensource.org/licenses/bsd-license.php
  */
 
@@ -20,7 +20,7 @@ class Flickr
 
 	const API_URL = 'http://api.flickr.com/services/rest/';
 
-	const VERSION = '0.5';
+	const VERSION = '0.6';
 
 	/**
 	 * The available return formats
@@ -131,7 +131,7 @@ class Flickr
 		$results = curl_exec($ch);
 		$headers = curl_getinfo($ch);
 
-		$error_number = curl_errno($ch);
+		$error_number = (int) curl_errno($ch);
 		$error_message = curl_error($ch);
 
 		curl_close($ch);
@@ -143,7 +143,7 @@ class Flickr
 		}
 
 		// are there errors?
-		if($error_number != '')
+		if($error_number > 0)
 		{
 			throw new Exception($error_message, $error_number);
 		}
