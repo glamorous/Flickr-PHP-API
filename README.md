@@ -49,6 +49,10 @@ If you find one, please inform us with the issue tracker on [github](http://gith
 
 ## Changelog ##
 
+**Flickr 0.6.1 - 02/05/2010**
+
+- [bug] deleted CURLOPT_FOLLOWLOCATION that causes errors on shared webhosting
+
 **Flickr 0.6 - 13/04/2010**
 
 - [bug] Error-number with curl is returning an int and defaults to 0  
