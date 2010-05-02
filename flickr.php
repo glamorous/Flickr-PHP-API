@@ -20,7 +20,7 @@ class Flickr
 
 	const API_URL = 'http://api.flickr.com/services/rest/';
 
-	const VERSION = '0.6';
+	const VERSION = '0.6.1';
 
 	/**
 	 * The available return formats
