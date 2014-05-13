@@ -18,7 +18,7 @@ class Flickr
 	const PHP = 'php_serial';
 	const SOAP = 'soap';
 
-	const API_URL = 'http://api.flickr.com/services/rest/';
+	const API_URL = 'https://api.flickr.com/services/rest/';
 
 	const VERSION = '0.6.1';
 
